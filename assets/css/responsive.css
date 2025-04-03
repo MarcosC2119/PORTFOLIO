@@ -1,0 +1,59 @@
+/* Responsive Design */
+
+/* Tablet Breakpoint */
+@media screen and (max-width: 768px) {
+    /* Layout Adjustments */
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Header Modifications */
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    /* Navigation Changes */
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Sidebar Adjustments */
+    .sidebar {
+        position: static;
+        margin-top: var(--spacing-md);
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 480px) {
+    /* Root Variable Adjustments */
+    :root {
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+    }
+
+    /* Typography Scaling */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+
+    /* Component Adjustments */
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
