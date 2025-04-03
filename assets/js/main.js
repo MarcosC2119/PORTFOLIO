@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Efecto de desplazamiento del encabezado
-const header = document.querySelector('.header');
+const header = document.querySelector('.main-header');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
@@ -40,5 +40,25 @@ document.querySelectorAll('.project-card').forEach(card => {
     
     card.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0)';
+    });
+});
+
+// Funcionalidad del menú móvil
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mainNav = document.querySelector('.main-nav');
+    
+    // Toggle del menú móvil
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        mainNav.classList.toggle('show');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            mainNav.classList.remove('show');
+        });
     });
 });
