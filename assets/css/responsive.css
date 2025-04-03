@@ -1,25 +1,25 @@
-/* Responsive Design */
+/* Diseño Responsivo */
 
-/* Tablet Breakpoint */
+/* Punto de quiebre para tablets */
 @media screen and (max-width: 768px) {
-    /* Layout Adjustments */
+    /* Ajustes de diseño */
     .main-container {
         grid-template-columns: 1fr;
     }
 
-    /* Header Modifications */
+    /* Modificaciones del encabezado */
     .header-content {
         flex-direction: column;
         gap: var(--spacing-sm);
     }
 
-    /* Navigation Changes */
+    /* Cambios en la navegación */
     .main-nav ul {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Sidebar Adjustments */
+    /* Ajustes de la barra lateral */
     .sidebar {
         position: static;
         margin-top: var(--spacing-md);
@@ -38,20 +38,20 @@
     }
 }
 
-/* Mobile Breakpoint */
+/* Punto de quiebre para móviles */
 @media screen and (max-width: 480px) {
-    /* Root Variable Adjustments */
+    /* Ajustes de variables raíz */
     :root {
         --spacing-md: 1.5rem;
         --spacing-lg: 2rem;
     }
 
-    /* Typography Scaling */
+    /* Escalado de tipografía */
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.5rem; }
     h3 { font-size: 1.2rem; }
 
-    /* Component Adjustments */
+    /* Ajustes de componentes */
     .profile-image {
         width: 150px;
         height: 150px;

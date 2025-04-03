@@ -1,6 +1,6 @@
-// Main JavaScript functionality
+// Funcionalidad principal de JavaScript
 
-// Smooth scroll implementation
+// Implementación del desplazamiento suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Header scroll effect
+// Efecto de desplazamiento del encabezado
 const header = document.querySelector('.header');
 let lastScroll = 0;
 
@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Project card hover effects
+// Efectos hover en las tarjetas de proyectos
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-5px)';

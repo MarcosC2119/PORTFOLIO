@@ -1,31 +1,31 @@
-/* Root Variables */
+/* Variables principales */
 :root {
-    /* Colors */
+    /* Colores */
     --primary-color: #2D2E32;
     --secondary-color: #64F4AC;
     --text-primary: #FFFFFF;
     --text-secondary: #ABB2BF;
     --bg-color: #1E1E1E;
     
-    /* Typography */
+    /* Tipografía */
     --font-primary: 'Inter', sans-serif;
     --font-code: 'Fira Code', monospace;
     
-    /* Spacing */
+    /* Espaciado */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
 }
 
-/* Base Styles */
+/* Estilos base */
 body {
     font-family: var(--font-primary);
     background-color: var(--bg-color);
     color: var(--text-primary);
 }
 
-/* Main Layout */
+/* Diseño principal */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -35,7 +35,7 @@ body {
     padding: var(--spacing-md);
 }
 
-/* Header Styles */
+/* Estilos del encabezado */
 .header {
     background-color: var(--primary-color);
     padding: var(--spacing-md);
@@ -44,7 +44,7 @@ body {
     z-index: 100;
 }
 
-/* Navigation */
+/* Navegación */
 .main-nav ul {
     display: flex;
     gap: var(--spacing-md);
