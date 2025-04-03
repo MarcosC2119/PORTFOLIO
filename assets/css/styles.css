@@ -665,3 +665,157 @@ body {
         width: 100%;
     }
 }
+
+/* Estilos para la sección de habilidades */
+.skills-section {
+    padding: 4rem 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.skills-container, .soft-skills-container {
+    max-width: var(--container-width);
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.skills-category h3, .skills-category h4 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas de habilidades técnicas */
+.skill-card {
+    background: rgba(133, 76, 230, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(133, 76, 230, 0.2);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.skill-card h5 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Indicador de nivel */
+.skill-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.level-indicator {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.level-indicator::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.level-indicator.basic::after {
+    width: 33%;
+}
+
+.level-indicator.medium::after {
+    width: 66%;
+}
+
+.level-indicator.advanced::after {
+    width: 100%;
+}
+
+.skill-level span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Habilidades Blandas */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.soft-skill-card {
+    background: rgba(133, 76, 230, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(133, 76, 230, 0.2);
+}
+
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.soft-skill-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.soft-skill-card h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.soft-skill-card p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .skills-grid, .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card, .soft-skill-card {
+        padding: 1.25rem;
+    }
+}
